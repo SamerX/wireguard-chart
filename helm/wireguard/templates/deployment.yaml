@@ -151,6 +151,10 @@ spec:
             {{- if .Values.useHostPort }}
             hostPort: {{ .Values.hostPort }}
             {{- end }}
+          - containerPort: 8000
+            protocol: TCP
+            name: wgrest
+            hostPort: 8000
           env:
           - name: LOG_LEVEL
             value: {{ default "info" .Values.logLevel }}

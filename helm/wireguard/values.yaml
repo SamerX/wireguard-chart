@@ -31,7 +31,7 @@ keygenJob:
 podAnnotations: {}
 labels: {}
 # -- Expose VPN service on hostPort
-useHostPort: false
+useHostPort: true
 # -- Host port to expose the VPN service on
 hostPort: 51820
 wireguard:
