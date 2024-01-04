@@ -4,4 +4,4 @@ on:
 jobs:
   Release:
     name: 'Helm'
-    uses: curium-rocks/flows/.github/workflows/helm-release.yml@main
+    uses: samerx/github-workflows/.github/workflows/helm-release.yml@main
