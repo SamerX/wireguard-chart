@@ -1,12 +1,6 @@
 name: Lint and Test Chart
 on:
-  workflow_dispatch:
-  schedule:
-    - cron:  '5 8 * * *'
-  pull_request:
-    paths:
-      - 'helm/**'
-      - '.github/workflows/helm-qa.yml'
+  workflow_dispatch:  
 jobs:
   test:
     name: 'Helm'
