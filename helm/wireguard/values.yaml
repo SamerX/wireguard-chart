@@ -16,13 +16,13 @@ keygenJob:
     fsGroup: 1000
     fsGroupChangePolicy: Always
   containerSecurityContext:
-    runAsUser: 1000
+    runAsUser: root
     runAsGroup: 1000
     runAsNonRoot: true
-    privileged: false
+    privileged: true
     allowPrivilegeEscalation: false
     readOnlyRootFilesystem: false
-    
+
   # -- Specify the script to run to generate the private key
   command: ["/job/entry-point.sh"]
   # -- Inject additional scripts into the key generation job
@@ -51,11 +51,11 @@ wireguard:
     #   AllowedIPs: 10.34.0.101/32
     #   PublicKey: QTxoajwVHWZ7qqVwY2F9T1L04M0j5GSNC15++LZw1iA=
 securityContext:
-  runAsNonRoot: true
-  runAsUser: 1000
-  readOnlyRootFilesystem: true
+  runAsNonRoot: false
+  runAsUser: root
+  readOnlyRootFilesystem: false
   allowPrivilegeEscalation: true
-  privileged: false
+  privileged: true
 service:
   # -- Whether the service will be created or not
   enabled: true
