@@ -1,0 +1,1 @@
+helm repo index . --url https://chr.io/samerx/wireguard-chart
