@@ -22,6 +22,7 @@ keygenJob:
     privileged: false
     allowPrivilegeEscalation: false
     readOnlyRootFilesystem: false
+    
   # -- Specify the script to run to generate the private key
   command: ["/job/entry-point.sh"]
   # -- Inject additional scripts into the key generation job
