@@ -1,0 +1,20 @@
+{{- if .Values.serviceWgRest.enabled }}
+kind: Service
+apiVersion: v1
+metadata:
+  name: "{{ .Release.Name }}-wgrest"
+  labels:
+    app: "{{ .Release.Name }}-wgrest"
+spec:
+  type: {{ .Values.serviceWgRest.type }}
+  ports:
+  - name: wgrest
+    protocol: UDP
+    port: {{ .Values.serviceWgRest.port }}
+    targetPort: 51800
+    {{- if .Values.serviceWgRest.type | eq "NodePort" }}
+    nodePort: {{ .Values.serviceWgRest.nodePort }}
+    {{- end }}
+  selector:
+    app: "{{ .Release.Name }}-wgrest"
+{{- end }}

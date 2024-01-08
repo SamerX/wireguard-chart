@@ -1,5 +1,5 @@
 # -- Run as a DaemonSet instead of Deployment
-daemonSet: false
+daemonSet: true
 image:
   repository: ghcr.io/samerx/wireguard
   tag: main
@@ -31,9 +31,9 @@ keygenJob:
 podAnnotations: {}
 labels: {}
 # -- Expose VPN service on hostPort
-useHostPort: true
+useHostPort: false
 # -- Host port to expose the VPN service on
-hostPort: 51820
+hostPort: 31820
 wireguard:
   # -- Address of the VPN server
   serverAddress: 10.34.0.1/24
@@ -59,12 +59,17 @@ service:
   # -- Whether the service will be created or not
   enabled: true
   # -- Service type, to keep internal to cluster use ClusterIP or NodePort
-  type: LoadBalancer
+  type: NodePort
   # -- Service port, default is 51820 UDP
   port: 51820
   # -- Node port, only valid with service type: NodePort
   nodePort: 31820
 # -- Name of a secret with a wireguard private key on key privatekey, if not provided on first install a hook generates one.
+serviceWgRest:
+  enabled: true
+  type: NodePort
+  port: 51800
+  nodePort: 31800
 secretName: ~
 replicaCount: 3
 resources:
