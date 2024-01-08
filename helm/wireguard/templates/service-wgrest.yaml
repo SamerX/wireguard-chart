@@ -9,7 +9,6 @@ spec:
   type: {{ .Values.serviceWgRest.type }}
   ports:
   - name: wgrest
-    protocol: UDP
     port: {{ .Values.serviceWgRest.port }}
     targetPort: 51800
     {{- if .Values.serviceWgRest.type | eq "NodePort" }}
