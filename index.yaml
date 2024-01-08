@@ -11,6 +11,6 @@ entries:
     name: wireguard
     type: application
     urls:
-    - https://ghcr.io/samerx/wireguard-chart/wireguard-0.18.5.tgz
+    - https://ghcr.io/samerx/wireguard-chart/wireguard-0.18.7.tgz
     version: 0.18.7
 generated: "2024-01-08T11:53:30.5185008+04:00"
