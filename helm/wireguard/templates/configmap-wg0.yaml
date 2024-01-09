@@ -16,4 +16,5 @@ metadata:
   name: "configmap-wg0"
 data:
   wg0.conf: {{ include "wg-config-template" . | b64enc }}
+{{- end }}
 
