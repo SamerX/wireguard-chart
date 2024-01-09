@@ -2,7 +2,7 @@ apiVersion: v2
 name: wireguard
 description: A Helm chart for managing a wireguard vpn in kubernetes
 type: application
-version: 0.18.13
+version: 0.18.14
 appVersion: "1.0.0"
 maintainers:
   - name: Samer Aburabie

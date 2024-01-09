@@ -1,4 +1,4 @@
-imageUrl: ghcr.io/samerx/wireguard
+imageUrl: ghcr.io/samerx/wireguard:main
 wireguard:
   serverAddress: 10.34.0.1/24
   serverCidr: 10.34.0.0/24 # -- Subnet for your VPN, take care not to clash with cluster POD cidr

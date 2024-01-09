@@ -1,1 +1,1 @@
-helm repo index . --url https://chr.io/samerx/wireguard-chart
+helm repo index . --url https://gchr.io/samerx/wireguard-chart
