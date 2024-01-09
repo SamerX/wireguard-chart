@@ -10,11 +10,10 @@ PostDown = iptables -t nat -D POSTROUTING -s {{ $natSourceNetOption }} -o eth0 -
 # Clients
 
 # End Clients
-kind: Secret
+kind: ConfigMap
 apiVersion: v1
 metadata:
   name: "configmap-wg0"
 data:
   wg0.conf: {{ include "wg-config-template" . | b64enc }}
-{{- end }}
 
