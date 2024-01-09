@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: wireguard
+spec:
+  selector:
+    matchLabels:
+      app: wireguard
+  template:
+    metadata:
+      labels:
+        app: wireguard
+    spec:
+      containers:
+      - name: wireguard
+        image: "{{ .Values.imageUrl }}"
+        ports:
+        - containerPort: 51820
+          protocol: UDP
+        volumeMounts:
+        - name: volume-wg0
+          mountPath: /etc/wireguard
+        readinessProbe:
+        exec:
+          command:
+          - /bin/sh
+          - -c
+          - 'ip link show dev wg0 | grep -s up'
+        initialDelaySeconds: 5
+        periodSeconds: 5    
+      volumes:
+      - name: volume-wg0
+        configMap:
+          name: configmap-wg0
+          items:
+          - key: wg0.conf
+            path: wg0.conf
