@@ -20,6 +20,14 @@ spec:
         volumeMounts:
         - name: volume-wg0
           mountPath: /etc/wireguard
+        securityContext:
+          capabilities:              
+            add:
+              - NET_ADMIN
+              - NET_RAW
+              - SETUID
+              - SETGID
+              - SYS_MODULE
         readinessProbe:
         exec:
           command:
