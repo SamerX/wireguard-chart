@@ -1,5 +1,6 @@
 {{- define "wg-config-template" -}}
 {{- $natSourceNetOption := .Values.wireguard.natAddSourceNet | ternary (printf "%s %s" "-s" .Values.wireguard.serverCidr) ("") -}}
+{{ println }}
 [Interface]
 PrivateKey = GDS/UBb/R3FGtNdxjb2QFgbWoEr0peAKG1hEKLSSlGY=
 Address = {{ .Values.wireguard.serverAddress }}
@@ -18,4 +19,4 @@ apiVersion: v1
 metadata:
   name: configmap-wg0
 data:
-  wg0.conf: {{ include "wg-config-template" . | b64enc }}
+  wg0.conf: |-  {{ include "wg-config-template" . | indent 4 }}
