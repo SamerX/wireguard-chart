@@ -3,7 +3,19 @@ entries:
   wireguard:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2024-01-11T10:45:50.2391118+04:00"
+    created: "2024-01-11T12:34:01.8770434+04:00"
+    description: A Helm chart for managing a wireguard vpn in kubernetes
+    digest: e168048eef132c0ec5f2496c12d496908160b155aef45fca82cd1c5e303e944d
+    maintainers:
+    - name: Samer Aburabie
+    name: wireguard
+    type: application
+    urls:
+    - https://gchr.io/samerx/wireguard-chart/wireguard-0.18.18.tgz
+    version: 0.18.18
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2024-01-11T12:34:01.8770434+04:00"
     description: A Helm chart for managing a wireguard vpn in kubernetes
     digest: 06fc5ade1ffd71b7ae8046258e96f9c4c9ef4054bbf71df34f8444b8646bed46
     maintainers:
@@ -15,7 +27,7 @@ entries:
     version: 0.18.17
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2024-01-11T10:45:50.2391118+04:00"
+    created: "2024-01-11T12:34:01.8770434+04:00"
     description: A Helm chart for managing a wireguard vpn in kubernetes
     digest: a74855563f4f3593f713b5735797c59060ab8db14bcacb8ee1e763f4240762ca
     maintainers:
@@ -27,7 +39,7 @@ entries:
     version: 0.18.16
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2024-01-11T10:45:50.2385783+04:00"
+    created: "2024-01-11T12:34:01.8765402+04:00"
     description: A Helm chart for managing a wireguard vpn in kubernetes
     digest: cbe230035a187d5c347d2219ca07a68cbe82c1cde50bc092ee6747e38b3ed222
     maintainers:
@@ -39,7 +51,7 @@ entries:
     version: 0.18.15
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2024-01-11T10:45:50.2385783+04:00"
+    created: "2024-01-11T12:34:01.8765402+04:00"
     description: A Helm chart for managing a wireguard vpn in kubernetes
     digest: 645fbd1b6770f56e5b502688ac021a9bf90073819b360d239b4cf07bc9b65124
     maintainers:
@@ -51,7 +63,7 @@ entries:
     version: 0.18.14
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2024-01-11T10:45:50.2385783+04:00"
+    created: "2024-01-11T12:34:01.8765402+04:00"
     description: A Helm chart for managing a wireguard vpn in kubernetes
     digest: 617f0f3ed49b844edb7703dc81b7704be8d740393efe35715cb39fb5e09b6840
     maintainers:
@@ -63,7 +75,7 @@ entries:
     version: 0.18.13
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2024-01-11T10:45:50.2380703+04:00"
+    created: "2024-01-11T12:34:01.8758999+04:00"
     description: A Helm chart for managing a wireguard vpn in kubernetes
     digest: a58c3eb5b2704b0524b80f2f52bbaa3dcd17c9912360a7f5941190d06eaf35ae
     maintainers:
@@ -75,7 +87,7 @@ entries:
     version: 0.18.12
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2024-01-11T10:45:50.2380703+04:00"
+    created: "2024-01-11T12:34:01.8758999+04:00"
     description: A Helm chart for managing a wireguard vpn in kubernetes
     digest: c049a8f3d1845d224bb004062ac45d80f1f3bbff63f114f3844a7b851d0c5e21
     maintainers:
@@ -87,7 +99,7 @@ entries:
     version: 0.18.11
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2024-01-11T10:45:50.2374859+04:00"
+    created: "2024-01-11T12:34:01.8753825+04:00"
     description: A Helm chart for managing a wireguard vpn in kubernetes
     digest: a48ff78b5413513e74f375e426512187e89c9a1e68e725168be55a1e2b7007be
     maintainers:
@@ -99,7 +111,7 @@ entries:
     version: 0.18.10
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2024-01-11T10:45:50.2481157+04:00"
+    created: "2024-01-11T12:34:01.8797418+04:00"
     description: A Helm chart for managing a wireguard vpn in kubernetes
     digest: fd70a46bb2a8976b89603e51b125c69fef87ea33092a8030cda5a6e282bfff49
     maintainers:
@@ -111,7 +123,7 @@ entries:
     version: 0.18.8
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2024-01-11T10:45:50.2404884+04:00"
+    created: "2024-01-11T12:34:01.8786943+04:00"
     description: A Helm chart for managing a wireguard vpn in kubernetes
     digest: 102bb5b823590b936897a50310e6624c14defb04823d46524456b0f31dc67275
     maintainers:
@@ -123,7 +135,7 @@ entries:
     version: 0.18.7
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2024-01-11T10:45:50.2399857+04:00"
+    created: "2024-01-11T12:34:01.878192+04:00"
     description: A Helm chart for managing a wireguard vpn in kubernetes
     digest: 774844d87868f8bffe3afa0d11f28ea136d9dd3ea7e5bd2808258399b5d6f053
     maintainers:
@@ -133,4 +145,4 @@ entries:
     urls:
     - https://gchr.io/samerx/wireguard-chart/wireguard-0.18.5.tgz
     version: 0.18.5
-generated: "2024-01-11T10:45:50.2374859+04:00"
+generated: "2024-01-11T12:34:01.8753825+04:00"

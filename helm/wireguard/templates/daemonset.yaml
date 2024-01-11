@@ -14,6 +14,7 @@ spec:
       containers:
       - name: wireguard
         image: "{{ .Values.imageUrl }}"
+        imagePullPolicy: always
         ports:
         - containerPort: 51820
           protocol: UDP
