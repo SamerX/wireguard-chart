@@ -10,7 +10,7 @@ spec:
     app: wireguard
   ports:
   - name: wgrest
-    port: 51800
-    targetPort: 51800    
-    nodePort: 31800 # You can specify a port or leave it to be dynamically assigned
+    port: 8080
+    targetPort: 8080    
+    nodePort: 30808 # You can specify a port or leave it to be dynamically assigned
   

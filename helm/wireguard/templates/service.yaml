@@ -8,6 +8,6 @@ spec:
     app: wireguard
   ports:
     - protocol: UDP
-      port: 51820
-      targetPort: 51820
-      nodePort: 31820 # You can specify a port or leave it to be dynamically assigned
+      port: 9090
+      targetPort: 9090
+      nodePort: 30909 # You can specify a port or leave it to be dynamically assigned

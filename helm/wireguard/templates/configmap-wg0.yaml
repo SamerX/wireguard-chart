@@ -4,12 +4,14 @@
 [Interface]
 PrivateKey = GDS/UBb/R3FGtNdxjb2QFgbWoEr0peAKG1hEKLSSlGY=
 Address = {{ .Values.wireguard.serverAddress }}
-ListenPort = 51820
+ListenPort = 9090
 PostUp = iptables -t nat -A POSTROUTING {{ $natSourceNetOption }} -o eth0 -j MASQUERADE
 PostDown = iptables -t nat -D POSTROUTING -s {{ $natSourceNetOption }} -o eth0 -j MASQUERADE
 
 # Clients
-
+[Peer]
+PublicKey = oP6Tf7yNSlWH4gI11TlVjbU4Gpjp+dd3GCZsFN7WAw0=
+AllowedIPs = 10.34.0.2/32
 # End Clients
 
 {{- end }}
