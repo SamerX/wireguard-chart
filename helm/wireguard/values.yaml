@@ -1,4 +1,7 @@
-imageUrl: ghcr.io/samerx/wireguard:main
+image:
+  url: ghcr.io/samerx/wireguard:main
+  pullPolicy: Always
+
 wireguard:
   serverAddress: 10.34.0.1/24
   serverCidr: 10.34.0.0/24 # -- Subnet for your VPN, take care not to clash with cluster POD cidr
