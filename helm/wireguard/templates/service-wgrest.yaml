@@ -7,7 +7,8 @@ spec:
   selector:
     app: wireguard
   ports:
-    - protocol: TCP
+    - name: port-wgrest
+      protocol: TCP
       port: 8080
       targetPort: 8080
       nodePort: 30808 # You can specify a port or leave it to be dynamically assigned
