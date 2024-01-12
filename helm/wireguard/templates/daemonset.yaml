@@ -16,8 +16,10 @@ spec:
         image: "{{ .Values.image.url }}"
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         ports:
-        - containerPort: 51820
+        - containerPort: 9090
           protocol: UDP
+        - containerPort: 8080
+          protocol: TCP
         volumeMounts:
         - name: volume-wg0
           mountPath: /etc/wireguard
