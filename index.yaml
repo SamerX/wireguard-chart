@@ -3,6 +3,18 @@ entries:
   wireguard:
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2024-01-15T16:23:43.40143914Z"
+    description: A Helm chart for managing a wireguard vpn in kubernetes
+    digest: 50d3c11add8886c93412bdcf572e6fe5019d4117adb2f4667a283d1a3bdf6fb8
+    maintainers:
+    - name: Samer Aburabie
+    name: wireguard
+    type: application
+    urls:
+    - https://github.com/SamerX/wireguard-chart/releases/download/wireguard-0.18.25/wireguard-0.18.25.tgz
+    version: 0.18.25
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2024-01-15T16:19:53.073370226Z"
     description: A Helm chart for managing a wireguard vpn in kubernetes
     digest: d93111578cf890c5f1a6785de854c230c6267c43ff87bc35b50e8250a2e46e67
@@ -277,4 +289,4 @@ entries:
     urls:
     - https://github.com/SamerX/wireguard-chart/releases/download/wireguard-0.18.2/wireguard-0.18.2.tgz
     version: 0.18.2
-generated: "2024-01-15T16:19:53.073630555Z"
+generated: "2024-01-15T16:23:43.401669121Z"
